@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="gTV-IL-0wX" customClass="ProductCell" customModule="VWNTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="265"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="265"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKs-ik-1JE">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="265"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vrX-2W-lds">
+                                <rect key="frame" x="10" y="10" width="230" height="146"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnQ-z7-pnq">
+                                <rect key="frame" x="10" y="166" width="230" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtJ-de-PtH">
+                                <rect key="frame" x="10" y="210" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.54420670664573889" green="0.54594311864334988" blue="0.49519854687362586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vrX-2W-lds" firstAttribute="height" secondItem="uKs-ik-1JE" secondAttribute="height" multiplier="0.55" id="1lo-vQ-a3i"/>
+                            <constraint firstAttribute="trailing" secondItem="tnQ-z7-pnq" secondAttribute="trailing" constant="10" id="Fr2-2K-V5H"/>
+                            <constraint firstItem="tnQ-z7-pnq" firstAttribute="top" secondItem="vrX-2W-lds" secondAttribute="bottom" constant="10" id="LQn-Ay-e14"/>
+                            <constraint firstItem="mtJ-de-PtH" firstAttribute="top" secondItem="tnQ-z7-pnq" secondAttribute="bottom" constant="20" id="Lkk-on-zKA"/>
+                            <constraint firstItem="mtJ-de-PtH" firstAttribute="leading" secondItem="uKs-ik-1JE" secondAttribute="leading" constant="10" id="OOn-Kk-nhI"/>
+                            <constraint firstItem="vrX-2W-lds" firstAttribute="top" secondItem="uKs-ik-1JE" secondAttribute="top" constant="10" id="PDu-QQ-W2z"/>
+                            <constraint firstAttribute="trailing" secondItem="vrX-2W-lds" secondAttribute="trailing" constant="10" id="ZQo-96-Qj7"/>
+                            <constraint firstItem="tnQ-z7-pnq" firstAttribute="width" secondItem="vrX-2W-lds" secondAttribute="width" id="dJD-PJ-pFg"/>
+                            <constraint firstItem="tnQ-z7-pnq" firstAttribute="leading" secondItem="uKs-ik-1JE" secondAttribute="leading" constant="10" id="e95-bx-Qa6"/>
+                            <constraint firstItem="vrX-2W-lds" firstAttribute="leading" secondItem="uKs-ik-1JE" secondAttribute="leading" constant="10" id="rT8-bP-7ZM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="uKs-ik-1JE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="M1J-hk-AAY"/>
+                <constraint firstItem="uKs-ik-1JE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZGr-cm-Ek8"/>
+                <constraint firstAttribute="bottom" secondItem="uKs-ik-1JE" secondAttribute="bottom" id="fre-U0-93b"/>
+                <constraint firstAttribute="trailing" secondItem="uKs-ik-1JE" secondAttribute="trailing" id="m0k-Dy-cOb"/>
+            </constraints>
+            <size key="customSize" width="250" height="265"/>
+            <connections>
+                <outlet property="Productprice" destination="mtJ-de-PtH" id="lgg-sA-I6k"/>
+                <outlet property="backview" destination="uKs-ik-1JE" id="cNO-fB-513"/>
+                <outlet property="productimage" destination="vrX-2W-lds" id="uPw-SH-7Y2"/>
+                <outlet property="productname" destination="tnQ-z7-pnq" id="W2I-9h-t3X"/>
+            </connections>
+            <point key="canvasLocation" x="276.81159420289856" y="201.89732142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
